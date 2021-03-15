@@ -5,12 +5,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Web_Push_Notification {
 
 	public static void main(String[] args) {
-		System.setProperty("webdriver.chrome.driver", "D:/QSSE10/chromedriver_win32/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
 		ChromeOptions option=new ChromeOptions();
 		option.addArguments("--disable-notifications");
 		
@@ -18,7 +17,7 @@ public class Web_Push_Notification {
 		WebDriver driver=new ChromeDriver(option);  	//Now we can handel popup
 		driver.manage().window().maximize();
 		driver.get("https://www.redbus.in"); 	
-		option				.//How to Access or Block notification of RedBus;
+		//option				.//How to Access or Block notification of RedBus;
 		/*Alert alt=driver.switchTo().alert();
 		alt.dismiss();
 		System.out.println(alt.getText());*/

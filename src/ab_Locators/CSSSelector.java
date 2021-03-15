@@ -16,6 +16,7 @@ public class CSSSelector {
 		driver.get("https://www.facebook.com");
 		driver.findElement(By.cssSelector("input[name='firstname']")).sendKeys("Pawan");
 		driver.findElement(By.cssSelector("input[name='lastname']")).sendKeys("Kumar");
+		
 	}
 
 }
