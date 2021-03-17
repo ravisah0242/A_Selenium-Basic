@@ -17,6 +17,7 @@ public class Multiple_Check_Box {
 		List<WebElement> checkbox=driver.findElements(By.xpath("//input[@type='checkbox']"));
 		System.out.println(checkbox.size());
 		
+		
 		// click on all the checkboxs;
 		/*for(int i=0;  i<checkbox.size(); i++)
 		{
